@@ -1,0 +1,90 @@
+.hero {
+      position: relative;
+  background: url('../../Assests/Hero.jpg.jpg') no-repeat center;
+  background-size: cover;
+  padding: 6rem 0;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  overflow: hidden;
+}
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.hero h1 {
+  position: relative;
+  z-index: 2;
+}
+
+.movies-section {
+  background-color: #fde9e9;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: #7a1b1b;
+  font-family: cursive;
+  margin-bottom: 2rem;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  width: 250px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  color: #800000;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.card-authors {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.card-btn {
+  background-color: #a00d0d;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+

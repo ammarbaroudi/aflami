@@ -1,0 +1,165 @@
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+  color: #fff;
+  padding: 1rem 0;
+  box-shadow: none;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+
+  margin: 0 auto;
+}
+
+
+
+.logo a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  font-family: "Lobster", cursive;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.nav-links a{
+    font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+
+.theme-toggle {
+  font-size: 1.1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;               
+    background-color: #820b04;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    padding: 1.5rem 0;
+    display: none;
+    z-index: 999;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeSlide 0.3s ease forwards;
+    text-align: center;
+    
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-item {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.7rem 0;
+    text-decoration: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-right {
+    gap: 1rem;
+  }
+
+  .theme-toggle {
+    font-size: 1.2rem;
+  }
+}
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+body.dark .navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #eee;
+}
+
+body.dark .logo a {
+  color: #ffa500;
+}
+
+body.dark .nav-item {
+  color: #eee;
+}
+
+body.dark .nav-item:hover {
+  color: #ffcc00;
+}
+
+body.dark .theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero-btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

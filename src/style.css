@@ -1,0 +1,16 @@
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #222;
+  transition: background-color 0.3s, color 0.3s;
+  scroll-behavior:smooth;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
+
+
